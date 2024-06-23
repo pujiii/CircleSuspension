@@ -72,14 +72,3 @@ Proof.
                 apply maponpathsidfun. } simpl. 
       apply pathsinv0l.
 Qed.
-
-Search (Type -> UU).
-
-Check (univalenceUAH univalenceAxiom S1 S1').
-(* Check (weqinvweq (S1 = S1') ((S1 ≃ S1'))). *)
-Check univalence.
-
-Check (pr1weq (weqinvweq (S1 = S1') ((S1 ≃ S1')))).
-
-Check ((pr1weq (weqinvweq (S1 = S1') ((S1 ≃ S1')))) (univalence S1 S1')).
-
